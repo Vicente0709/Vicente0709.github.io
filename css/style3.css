@@ -1,0 +1,47 @@
+/* Estilos para el contenedor principal */
+ 
+.form-group {
+    width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    border: 1px solid #675d5d4a;
+    
+  }
+  
+  /* Estilos para el título */
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Estilos para el campo de correo electrónico */
+  .email input {
+    width: auto;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  /* Estilos para el campo de contraseña */
+  .pass input {
+    width: auto;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  /* Estilos para el botón de registro */
+  button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4%;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
