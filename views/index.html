@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Home</title>
+
+  <link rel="stylesheet" href="../css/index.css" />
+  <link rel="icon" href="../images/favicon.ico" />
+</head>
+
+<body>
+  <header>
+    <!--Barra de navegacion-->
+    <nav class="navList">
+      <ul class="bar">
+        <li class="navItem">
+          <a href="../views/index.html"><img href="../views/index.html" class="logo" src="../images/logoNav.png"
+              alt="logo" /></a>
+        </li>
+        <li class="navItem"><a href="../views/index.html">Home</a></li>
+        <li class="navItem"><a href="../views/products.html">Productos</a></li>
+        <li class="navItem"><a href="../views/createProduct.html">Añadir producto</a></li>
+      </ul>
+      <ul class="profile">
+        <li class="navItem"><button id="btnLogNav">Log in</button></li>
+        <li class="navItem"><button id="btnRegisterNav">Register</button></li>
+      </ul>
+    </nav>
+    <!--Fin Barra de navegacion-->
+  </header>
+  <!--Banner -->
+  <div class="imgHome">
+    <img class="imgBanner" src="../images/banner.png" alt="Banner de inicio" />
+    <div class="banner-content">
+      <img class="overlay-image" src="../images/Group.png" alt="Imagen superpuesta" />
+      <h2 class="banner-title">Todo lo que buscas en un solo lugar.</h2>
+      <button class="banner-button" id="btnBanner">Publicar</button>
+    </div>
+  </div>
+  <!--Fin Banner -->
+  <!--Inicio Sección  info-->
+  <h2>
+    PoliMarket: La plataforma de la comunidad politécnica para conectar,
+    emprender y vender
+  </h2>
+  <div class="info">
+
+    <div class="infolib">
+      <h3>Libros</h3>
+      <p>
+        ¡Descubre un mundo de conocimiento en nuestra sección de libros
+        comunitarios! Sumérgete en una biblioteca virtual donde la comunidad
+        politécnica comparte sus pensamientos, descubrimientos y experiencias
+        a través de páginas cautivadoras. Desde apasionantes novelas hasta
+        inspiradoras obras académicas, nuestra página web te invita a explorar
+        una amplia gama de títulos fascinantes. Prepárate para expandir tu
+        horizonte intelectual mientras te sumerges en un mar de palabras,
+        ¡todo a solo un clic de distancia! Bienvenido a una aventura literaria
+        única, creada por y para la comunidad politécnica.
+      </p>
+      <button id="btnLib">Learn more</button>
+    </div>
+    <div class="infoTec">
+      <h3>Tecnología</h3>
+      <p>
+        ¡Explora el futuro con nuestra sección de tecnología innovadora!
+        Sumérgete en un mundo fascinante donde la vanguardia y la creatividad
+        convergen. Desde dispositivos de última generación hasta
+        descubrimientos científicos revolucionarios, nuestra página web te
+        lleva de la mano a través del emocionante viaje de la evolución
+        tecnológica. Desbloquea el potencial ilimitado de la era digital y
+        descubre cómo la tecnología moldea nuestro presente y transforma
+        nuestro futuro. Únete a nosotros mientras exploramos las fronteras de
+        la innovación y te conectamos con las ideas más audaces de la
+        comunidad politécnica. ¡Prepárate para ser inspirado y maravillado por
+        las maravillas tecnológicas que te esperan!
+      </p>
+      <button id="btnTec">Learn more</button>
+    </div>
+    <div class="infoCourse">
+      <h3>Clases</h3>
+      <p>
+        Descubre el tesoro educativo en nuestra página web, donde cientos de estudiantes de la comunidad politécnica se
+        unen para ofrecerte las mejores clases en todas las materias que estás cursando. Sumérgete en un océano de
+        conocimientos y encuentra la opción perfecta para triunfar académicamente. No pierdas más tiempo buscando en
+        otros lugares, únete a nuestra comunidad y desbloquea un mundo de posibilidades educativas a solo unos clics de
+        distancia.
+      </p>
+      <button id="btnCourse">Learn more</button>
+    </div>
+  </div>
+  <!--Fin sección info-->
+  <!--Inicio seccion Destacados (Aqui se deberia recuperar de la base de datos el o los productos destacados pero por lo pronto estaran quemados) -->
+
+  <!--Inicio sección destacado-->
+  <h2>
+    Destacados
+  </h2>
+  <div class="destacado">
+    <div class="item1">
+      <img src="../images/books.png" alt="">
+      <div class="item-info">
+        <h3>Libros de inglés 5ta edición, diferentes niveles.</h3>
+        <p>A la venta libros de inglés a buen precio desde nivel beginner hasta advanced 1, todos con código intacto.
+        </p>
+      </div>
+    </div>
+    <div class="item2">
+      <img src="../images/redmi buds.png" alt="">
+      <div class="item-info">
+        <h3>Xiaomi redmi buds 3</h3>
+        <p>Audifonos inalambricos de alta calidad con cancelacion de ruido, resistentea al agua.</p>
+      </div>
+    </div>
+  </div>
+  <!--fin sección destacado-->
+
+  <!--Inicio sección footer-->
+  <footer class="footer">
+    <img src="../images/logoNav.png" alt="Logo">
+    <hr class="footer-line">
+    <div class="footerIcon">
+      <img src="../images/Ellipse.png" alt="icon">
+      <img src="../images/Ellipse.png" alt="icon">
+      <img src="../images/Ellipse.png" alt="icon">
+      <img src="../images/Ellipse.png" alt="icon">
+    </div>
+    <p class="footer-text">© Epn Inc. 2023. We love our users!</p>
+  </footer>
+  <!--fin sección footer-->
+
+
+</body>
+<script src="../js/main.js"></script>
+
+</html>

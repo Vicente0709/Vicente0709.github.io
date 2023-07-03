@@ -1,0 +1,99 @@
+@font-face {
+    font-family: 'Comfortaa';
+    src: url('fonts/Comfortaa-VariableFont_wght.ttf');
+}
+
+body {
+    font-family: 'Comfortaa', sans-serif;
+}
+
+#imagen {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 15%;
+    padding: 10px;
+}
+
+#cajaLogin {
+    margin: 0 auto;
+    padding: 10px;
+    width: 650px;
+    height: 400px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+#cajaLogin *{
+    margin-left: 10px;
+}
+
+#cajaLogin form * {
+    display: block;
+}
+
+#cajaLogin h2 {
+    font-size: 48px;
+    margin-bottom: 35px;
+}
+
+#cajaLogin label {
+    font-size: 28px;
+}
+
+#cajaLogin input[type="email"], #cajaLogin input[type="password"] {
+    width: 550px;
+    height: 40px;
+    border: 1px solid rgba(0,0,0,0.5);
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+#cajaLogin a {
+    text-align: right;
+    text-decoration: none;
+    font-size: 20px;
+    color: #18A0FB;
+    margin-right: 76px;
+}
+
+#cajaLogin input[type="submit"] {
+    width: 165px;
+    height: 40px;
+    font-size: 22px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #18A0FB;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+#cajaSignup {
+    margin: 0 auto;
+    padding: 10px;
+}
+
+#cajaSignup h2 {
+    font-size: 20px;
+    text-align: center;
+    color: darkgray;
+    margin: 10px;
+}
+
+#cajaSignup a{
+    text-decoration: none;
+}
+
+#cajaSignup button {
+    font-size: 24px;
+    text-align: center;
+    width: 672px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: white;
+    cursor: pointer;
+    margin: 10px auto;
+    display: block;
+    max-width: 100%;
+}

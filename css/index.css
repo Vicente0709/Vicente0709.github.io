@@ -1,0 +1,240 @@
+body {
+  margin: 0;
+  border: 0;
+  padding: 0;
+
+  font-size: 100%;
+  font: inherit;
+}
+
+/* Inicio barra de navegacion */
+
+.navList {
+  width: 100%;
+  background-color: #f2f2f2;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.navList .bar {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navList .profile {
+  margin-left: auto;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 25px;
+}
+.navList li {
+  margin: 10px;
+}
+.navList .navItem .logo {
+  width: auto;
+  height: auto;
+  max-height: 50px;
+}
+
+.navList li {
+  margin: 10px;
+}
+
+.navList a {
+  text-decoration: none;
+  color: #18a0fb;
+  font-weight: bold;
+  font-family: inherit;
+}
+
+.navList #btnLogNav {
+  background-color: white;
+  color: #18a0fb;
+  border-color: #18a0fb;
+  padding: 10px 30px;
+  border-width: 1px;
+  border-radius: 5%;
+  cursor: pointer;
+}
+
+.navList #btnRegisterNav {
+  background-color: #18a0fb;
+  color: white;
+  border-color: #18a0fb;
+  padding: 10px 30px;
+  border-radius: 5%;
+  cursor: pointer;
+}
+
+/*Fin barra de navegacion*/
+
+/*Inicio banner*/
+.imgBanner {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.banner-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -70%);
+  text-align: center;
+}
+
+.overlay-image {
+  width: 100px; /* Ajusta el tamaño según tus necesidades */
+  height: auto;
+}
+
+.banner-title {
+  font-size: 54px;
+  margin-top: 90px;
+  color: white;
+}
+
+.banner-button {
+  color: #333;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: #18a0fb;
+  color: white;
+  border-color: #18a0fb;
+  padding: 10px 30px;
+
+  cursor: pointer;
+}
+
+/*Fin banner*/
+
+/*Inicio info*/
+.info {
+  height: 600px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto;
+  padding: 10px;
+}
+h2 {
+  font-family: "Times New Roman", Times, serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.info #btnLib {
+  background-color: white;
+  color: #18a0fb;
+  border-color: #18a0fb;
+  padding: 10px 30px;
+  border-width: 1px;
+  border-radius: 5%;
+}
+.info #btnTec {
+  background-color: white;
+  color: #18a0fb;
+  border-color: #18a0fb;
+  padding: 10px 30px;
+  border-width: 1px;
+  border-radius: 5%;
+}
+.info #btnCourse {
+  background-color: white;
+  color: #18a0fb;
+  border-color: #18a0fb;
+  padding: 10px 30px;
+  border-width: 1px;
+  border-radius: 5%;
+}
+
+/*Fin info*/
+
+/*Inicio destacado*/
+.destacado {
+  justify-content: center;
+}
+
+.item1 {
+  display: flex;
+  align-items: center;
+}
+
+.item1 img {
+  height: 400px;
+  margin-right: 10px;
+}
+
+.item-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.item-info h3 {
+  margin: 0;
+}
+
+.item-info p {
+  margin: 0;
+}
+
+.item2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f5f5f5;
+}
+
+.item2 img {
+  height: 400px;
+  margin-left: 10px;
+  order: 2;
+}
+
+.item2-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.item2-info h3 {
+  margin-left: 10px;
+}
+
+.item2-info p {
+  margin-right: 10px;
+}
+/*Fin destacado*/
+/*Inicio footer*/
+.footer {
+  padding-top: 50px;
+  background-color: #ffffff;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer img {
+  max-width: 100%;
+  height: auto;
+}
+
+.footer-line {
+  border: 1px solid black;
+  margin: 20px auto;
+  width: 90%;
+}
+
+.footer-text {
+  font-size: 14px;
+  color: gray;
+}
+
+.footerIcon {
+  display: inline;
+}
+
+/*Fin footer*/

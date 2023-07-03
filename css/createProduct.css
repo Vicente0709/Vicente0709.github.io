@@ -1,0 +1,208 @@
+@font-face {
+  font-family: "Comfortaa";
+  src: url("fonts/Comfortaa-VariableFont_wght.ttf");
+}
+
+body {
+  font-family: inherit, "Comfortaa", sans-serif;
+}
+
+.navList {
+  width: 100%;
+  background-color: #f2f2f2;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.navList .bar {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navList .profile {
+  margin-left: auto;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 25px;
+}
+.navList li {
+  margin: 10px;
+}
+.navList .navItem .logo {
+  width: auto;
+  height: auto;
+  max-height: 50px;
+}
+
+.navList li {
+  margin: 10px;
+}
+
+.navList a {
+  text-decoration: none;
+  color: #18a0fb;
+  font-weight: bold;
+  font-family: inherit;
+}
+
+.navList #btnLogNav {
+  background-color: white;
+  color: #18a0fb;
+  border-color: #18a0fb;
+  padding: 10px 30px;
+  border-width: 1px;
+  border-radius: 5%;
+  cursor: pointer;
+}
+
+.navList #btnRegisterNav {
+  background-color: #18a0fb;
+  color: white;
+  border-color: #18a0fb;
+  padding: 10px 30px;
+  border-radius: 5%;
+  cursor: pointer;
+}
+
+#categorias {
+  max-width: 977px;
+  max-height: 220px;
+  display: flex;
+  justify-content: center;
+  margin: 10px auto;
+}
+
+#categorias li {
+  list-style: none;
+  display: block;
+  border: 1px solid black;
+  width: 260px;
+  height: 200px;
+  margin: 0 40px 0 40px;
+  float: left;
+}
+
+#categorias img {
+  width: 260px;
+  height: 100px;
+}
+
+#categorias p {
+  text-align: center;
+  height: 100px;
+  font-size: 24px;
+  padding-top: 10%;
+  line-height: 50px;
+}
+
+#cajaInformacion {
+  border: 1px solid black;
+  border-radius: 10px;
+  max-width: 977px;
+  max-height: 430px;
+  display: flex;
+  margin: 10px auto;
+}
+
+#informacion h3 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-top: 5px;
+  margin-bottom: 29px;
+}
+
+#informacion label {
+  font-size: 18px;
+  line-height: 30px;
+  margin-bottom: 11px;
+}
+
+#cajaInformacion * {
+  margin-left: 8px;
+}
+
+#cajaInformacion input[type="text"] {
+  width: 489px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+#estado {
+  width: 489px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+#descripcion {
+  width: 489px;
+  height: 60px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  font-size: 18px;
+  resize: none;
+  margin-bottom: 11px;
+}
+
+#cantidad {
+  width: 50px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  font-size: 18px;
+  margin-bottom: 11px;
+}
+
+#precio {
+  width: 100px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  font-size: 18px;
+  margin-left: 20px;
+}
+
+#cajaInformacion input[type="submit"] {
+  display: block;
+  width: 165px;
+  height: 40px;
+  font-size: 22px;
+  text-align: center;
+  border-radius: 10px;
+  background-color: #18a0fb;
+  border: none;
+  color: white;
+  cursor: pointer;
+  margin-left: calc(100% - 100px);
+  margin-bottom: 10px;
+}
+
+#dropzone {
+  width: 50%;
+  height: 200px;
+  border: 1px dashed gray;
+  margin-top: 50px;
+  margin-right: 5%;
+  padding: 20px;
+  text-align: center;
+  font-size: 18px;
+  background-color: #f2f2f2;
+  cursor: grab;
+}
+
+#dropzone p {
+  margin: 76px 78px 68px 79px;
+}
+
+footer {
+  font-size: 10px;
+  margin-top: 10px;
+  text-align: center;
+}

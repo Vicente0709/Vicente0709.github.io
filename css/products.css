@@ -1,0 +1,140 @@
+body {
+  margin: 0;
+  border: 0;
+  padding: 0;
+
+  font-size: 100%;
+  font: inherit;
+}
+
+/* Inicio barra de navegacion */
+
+.navList {
+  width: 100%;
+  background-color: #f2f2f2;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.navList .bar {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navList .profile {
+  margin-left: auto;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 25px;
+}
+
+.navList li {
+  margin: 10px;
+}
+
+.navList .navItem .logo {
+  width: auto;
+  height: auto;
+  max-height: 50px;
+}
+
+.navList li {
+  margin: 10px;
+}
+
+.navList a {
+  text-decoration: none;
+  color: #18a0fb;
+  font-weight: bold;
+  font-family: inherit;
+}
+
+.navList #btnLogNav {
+  background-color: white;
+  color: #18a0fb;
+  border-color: #18a0fb;
+  padding: 10px 30px;
+  border-width: 1px;
+  border-radius: 5%;
+  cursor: pointer;
+}
+
+.navList #btnRegisterNav {
+  background-color: #18a0fb;
+  color: white;
+  border-color: #18a0fb;
+  padding: 10px 30px;
+  border-radius: 5%;
+  cursor: pointer;
+}
+
+/*Fin barra de navegacion*/
+.container {
+  border: 1px solid black;
+  height: max-content;
+  margin-left: 200px;
+  margin-right: 200px;
+  border-radius: 5px;
+
+  background-color: rgba(230, 230, 230, 0.25);
+}
+
+.product-card {
+  width: auto;
+  height: 200px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 100px;
+  margin-left: 100px;
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: white;
+}
+
+.product-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.product-info {
+  flex-grow: 1;
+  display: inline;
+  padding: 30px;
+}
+
+.product-info h3 {
+  margin: 0;
+  display: inline;
+  padding: 30px;
+}
+
+.product-info p {
+  margin: 0;
+  display: inline;
+  padding: 30px;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.icons img {
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+  cursor: pointer;
+  padding: 20px;
+}

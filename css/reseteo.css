@@ -1,0 +1,73 @@
+@font-face {
+    font-family: 'Comfortaa';
+    src: url('fonts/Comfortaa-VariableFont_wght.ttf');
+}
+
+body {
+    font-family: 'Comfortaa', sans-serif;
+}
+
+#imagen {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 15%;
+    padding: 10px;
+}
+
+#cajaReseteo{
+    border: 1px solid black;
+    width: 640px;
+    height: 345px;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#cajaReseteo *{
+    margin-left: 20px;
+}
+
+form h2 {
+    font-size: 40px;
+    margin-bottom: 35px;
+}
+
+form p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+form label{
+    font-size: 28px;
+}
+
+form input[type="email"]{
+    width: 520px;
+    height: 40px;
+    border: 1px solid rgba(0,0,0,0.5);
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+form input[type="submit"]{
+    width: 523px;
+    height: 40px;
+    font-size: 24px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #18A0FB;
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+#cajaReseteo a{
+    font-size: 20px;
+    text-decoration: none;
+    color: darkgray;
+    margin-top: 20px;
+    margin-left: 260px;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Create Product</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/updateProduct.css">
+    <link rel="icon" href="../images/favicon.ico">
+</head>
+
+<body>
+    <header>
+        <!--Barra de navegacion-->
+        <nav class="navList">
+            <ul class="bar">
+                <li class="navItem">
+                    <a href="../views/index.html"><img href="../views/index.html" class="logo" src="../images/logoNav.png"
+                        alt="logo" /></a>
+                  </li>
+                <li class="navItem"><a href="../views/index.html">Home</a></li>
+                <li class="navItem"><a href="../views/products.html">Productos</a></li>
+                <li class="navItem"><a href="../views/createProduct.html">Añadir producto</a></li>
+            </ul>
+            <ul class="profile">
+                <li class="navItem"><button id="btnLogNav">Log in</button></li>
+                <li class="navItem"><button id="btnRegisterNav">Register</button></li>
+            </ul>
+        </nav>
+        <!--Fin Barra de navegacion-->
+    </header>
+
+    <main>
+        <form>
+            <fieldset id="cajaInformacion">
+                <div id="informacion">
+                    <h3>Complete la información de tu producto para actualizar</h3>
+
+                    <label for="titulo">Título de la publicación</label>
+                    <input id="titulo" type="text" placeholder="Xiaomi">
+                    <br>
+                    <label for="estado">Estado</label>
+                    <input list="opciones" id="estado" placeholder="Nuevo">
+                    <datalist id="opciones">
+                        <option value="Nuevo">
+                        <option value="Usado">
+                    </datalist>
+                    <br>
+                    <label for="descripcion">Descripción</label>
+                    <textarea id="descripcion" cols="30" rows="3"
+                        placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris dictum nulla non urna suscipit laoreet. Pellentesque habitant morbi tristique senectus et netus et malesuada fames."></textarea>
+                    <br>
+                    <label for="cantidad">Cantidad</label>
+                    <input type="number" id="cantidad" max="20" placeholder="1">
+                    <br>
+                    <label for="precio">Precio $</label>
+                    <input type="number" id="precio" placeholder="350">
+                    <br>
+                    <input type="submit" id="agregar" value="Actualizar">
+                </div>
+
+                <div id="dropzone"></div>
+
+            </fieldset>
+        </form>
+    </main>
+    <!--
+<footer>
+    <p>&copy; 2023 - Todos los derechos reservados</p>
+</footer>
+-->
+</body>
+<script src="../js/update.js"></script>
+</html>
