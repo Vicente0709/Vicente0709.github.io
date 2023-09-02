@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/createProduct.css">
     <link rel="icon" href="../images/favicon.ico">
+    <script src="../js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </head>
 
 <body>
@@ -15,12 +18,12 @@
         <nav class="navList">
             <ul class="bar">
                 <li class="navItem">
-                    <a href="../index.html"><img href="../index.html" class="logo" src="../images/logoNav.png"
-                        alt="logo" /></a>
+                    <a href="ml"><img href="../views/index.html" class="logo" src="../images/logoNav.png"
+                                      alt="logo" /></a>
                   </li>
-                <li class="navItem"><a href="../index.html">Home</a></li>
-                <li class="navItem"><a href="../views/products.html">Productos</a></li>
-                <li class="navItem"><a href="../views/createProduct.html">Añadir producto</a></li>
+                <li class="navItem"><a href="ml">Home</a></li>
+                <li class="navItem"><a href=".html">Productos</a></li>
+                <li class="navItem"><a href="/createProduct.html">Añadir producto</a></li>
             </ul>
             <ul class="profile">
                 <li class="navItem"><button id="btnLogNav">Log in</button></li>
@@ -32,7 +35,8 @@
 
 
     <main>
-        <form>
+        <form id="form"> <!-- action="http://localhost:3000/polimarket/create" method="post" enctype="multipart/form-data" -->
+            <!--
             <fieldset id="categorias">
                 <li>
                     <article>
@@ -53,35 +57,45 @@
                     </article>
                 </li>
             </fieldset>
+            -->
 
             <fieldset id="cajaInformacion">
                 <div id="informacion">
                     <h3>Complete la información de tu producto</h3>
 
+                    <label for="tipo">Categoria</label>
+                    <input list="tipos" id="tipo" name="type">
+                    <datalist id="tipos">
+                        <option value="Libros">
+                        <option value="Tecnologia">
+                        <option value="Producto 3">
+                    </datalist>
+                    <br>
                     <label for="titulo">Título de la publicación</label>
-                    <input id="titulo" type="text">
+                    <input id="titulo" type="text" name="title">
                     <br>
                     <label for="estado">Estado</label>
-                    <input list="opciones" id="estado">
+                    <input list="opciones" id="estado" name="state">
                     <datalist id="opciones">
                         <option value="Nuevo">
                         <option value="Usado">
                     </datalist>
                     <br>
                     <label for="descripcion">Descripción</label>
-                    <textarea id="descripcion" cols="30" rows="3"></textarea>
+                    <textarea id="descripcion" cols="30" rows="3" name="description"></textarea>
                     <br>
                     <label for="cantidad">Cantidad</label>
-                    <input type="number" id="cantidad" max="20">
+                    <input type="number" id="cantidad" max="20" name="count">
                     <br>
                     <label for="precio">Precio $</label>
-                    <input type="number" id="precio">
+                    <input type="number" id="precio" name="value">
                     <br>
                     <input type="submit" id="agregar" value="Agregar">
                 </div>
 
                 <div id="dropzone">
-                    <p>Agregar o arrastra imágenes</p>
+                    <p>Agregar imagen</p>
+                    <input type="file" id="imagen" name="image" accept="image/png, image/jpeg">
                 </div>
 
             </fieldset>
