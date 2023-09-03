@@ -16,7 +16,7 @@ function readProducts() {
         nuevoDivPrincipal.classList.add("product-card");
 
         let nuevaImagen = document.createElement("img");
-        nuevaImagen.src = "../images/celular.png";
+        nuevaImagen.src = "../../backend/uploads/"+element.product.image;
 
         let nuevoDivDos = document.createElement("div");
         nuevoDivDos.classList.add("product-info");
