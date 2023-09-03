@@ -69,44 +69,13 @@ body {
   cursor: pointer;
 }
 
-#categorias {
-  max-width: 977px;
-  max-height: 220px;
-  display: flex;
-  justify-content: center;
-  margin: 10px auto;
-}
-
-#categorias li {
-  list-style: none;
-  display: block;
-  border: 1px solid black;
-  width: 260px;
-  height: 200px;
-  margin: 0 40px 0 40px;
-  float: left;
-}
-
-#categorias img {
-  width: 260px;
-  height: 100px;
-}
-
-#categorias p {
-  text-align: center;
-  height: 100px;
-  font-size: 24px;
-  padding-top: 10%;
-  line-height: 50px;
-}
-
 #cajaInformacion {
   border: 1px solid black;
   border-radius: 10px;
   max-width: 977px;
-  max-height: 430px;
+  max-height: 450px;
   display: flex;
-  margin: 10px auto;
+  margin: 50px auto;
 }
 
 #informacion h3 {
@@ -131,7 +100,8 @@ body {
   height: 30px;
   border: 1px solid rgba(0, 0, 0, 0.5);
   border-radius: 10px;
-  font-size: 18px;
+  font-size: 14px;
+  /* pointer-events: none; */
 }
 
 #estado {
@@ -139,6 +109,8 @@ body {
   height: 30px;
   border: 1px solid rgba(0, 0, 0, 0.5);
   border-radius: 10px;
+  font-size: 14px;
+  pointer-events: none;
 }
 
 #descripcion {
@@ -146,7 +118,7 @@ body {
   height: 60px;
   border: 1px solid rgba(0, 0, 0, 0.5);
   border-radius: 10px;
-  font-size: 18px;
+  font-size: 14px;
   resize: none;
   margin-bottom: 11px;
 }
@@ -158,6 +130,7 @@ body {
   border-radius: 10px;
   font-size: 18px;
   margin-bottom: 11px;
+  text-align: center;
 }
 
 #precio {
@@ -167,11 +140,12 @@ body {
   border-radius: 10px;
   font-size: 18px;
   margin-left: 20px;
+  text-align: center;
 }
 
 #cajaInformacion input[type="submit"] {
-  display: block;
-  width: 165px;
+  /* display: block; */
+  width: 150px;
   height: 40px;
   font-size: 22px;
   text-align: center;
@@ -187,14 +161,15 @@ body {
 #dropzone {
   width: 50%;
   height: 200px;
-  border: 1px dashed gray;
+  border: 1px solid gray;
   margin-top: 50px;
   margin-right: 5%;
   padding: 20px;
   text-align: center;
   font-size: 18px;
   background-color: #f2f2f2;
-  cursor: grab;
+  background-image: url("celular.png");
+  background-position: center;
 }
 
 #dropzone p {

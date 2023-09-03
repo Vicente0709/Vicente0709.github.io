@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Products</title>
+    <link rel="icon" href="../images/favicon.ico" />
+    <link rel="stylesheet" href="../css/products.css" />
+
+</head>
+
+<body>
+    <!--Barra de navegacion-->
+    <nav class="navList">
+        <ul class="bar">
+            <li class="navItem">
+                <a href="ml"><img href="../views/index.html" class="logo" src="../images/logoNav.png"
+                                  alt="logo" /></a>
+              </li>
+            <li class="navItem"><a href="index.html">Home</a></li>
+            <li class="navItem"><a href="products.html">Productos</a></li>
+            <li class="navItem"><a href="createProduct.html">Añadir producto</a></li>
+        </ul>
+        <ul class="profile">
+            <li class="navItem"><button id="btnLogNav">Log in</button></li>
+            <li class="navItem"><button id="btnRegisterNav">Register</button></li>
+        </ul>
+    </nav>
+
+    <!--Fin Barra de navegacion-->
+    <div class="container" id="panel"></div>
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="../node_modules/axios/dist/axios.js"></script>
+<script src="../js/read_products.js"></script>
+</html>

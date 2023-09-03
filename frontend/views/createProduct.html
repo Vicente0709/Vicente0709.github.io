@@ -4,12 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Create Product</title>
-    <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/createProduct.css">
     <link rel="icon" href="../images/favicon.ico">
-    <script src="../js/index.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+   
 </head>
 
 <body>
@@ -18,12 +15,12 @@
         <nav class="navList">
             <ul class="bar">
                 <li class="navItem">
-                    <a href="ml"><img href="../views/index.html" class="logo" src="../images/logoNav.png"
-                                      alt="logo" /></a>
+                    <!-- <a href="ml"><img href="../views/index.html" class="logo" src="../images/logoNav.png" alt="logo" /></a> -->
+                    <a href="ml"><img href="../views/index.html" class="logo" src="../images/logoNav.png" alt="logo" /></a>
                   </li>
-                <li class="navItem"><a href="ml">Home</a></li>
-                <li class="navItem"><a href=".html">Productos</a></li>
-                <li class="navItem"><a href="/createProduct.html">Añadir producto</a></li>
+                <li class="navItem"><a href="index.html">Home</a></li>
+                <li class="navItem"><a href="products.html">Productos</a></li>
+                <li class="navItem"><a href="createProduct.html">Añadir producto</a></li>
             </ul>
             <ul class="profile">
                 <li class="navItem"><button id="btnLogNav">Log in</button></li>
@@ -75,27 +72,27 @@
                     <input id="titulo" type="text" name="title">
                     <br>
                     <label for="estado">Estado</label>
-                    <input list="opciones" id="estado" name="state">
-                    <datalist id="opciones">
-                        <option value="Nuevo">
-                        <option value="Usado">
-                    </datalist>
+                    <select id="estado" name="state" required>
+                        <option value="">- Seleccione -</option>
+                        <option>Nuevo</option>
+                        <option>Usado</option>
+                    </select>
                     <br>
                     <label for="descripcion">Descripción</label>
                     <textarea id="descripcion" cols="30" rows="3" name="description"></textarea>
                     <br>
                     <label for="cantidad">Cantidad</label>
-                    <input type="number" id="cantidad" max="20" name="count">
+                    <input type="number" id="cantidad" min="0" max="20" name="count">
                     <br>
                     <label for="precio">Precio $</label>
-                    <input type="number" id="precio" name="value">
+                    <input type="number" id="valor" name="value">
                     <br>
                     <input type="submit" id="agregar" value="Agregar">
                 </div>
 
                 <div id="dropzone">
                     <p>Agregar imagen</p>
-                    <input type="file" id="imagen" name="image" accept="image/png, image/jpeg">
+                    <input type="file" id="imagen" name="image" accept="image/png, image/jpeg" required>
                 </div>
 
             </fieldset>
@@ -108,4 +105,8 @@
     -->
 </body>
 <script src="../js/create.js"></script>
+<script src="../js/index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="../node_modules/axios/dist/axios.js"></script>
 </html>
