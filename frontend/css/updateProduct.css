@@ -31,9 +31,11 @@ body {
   justify-content: center;
   padding-right: 25px;
 }
+
 .navList li {
   margin: 10px;
 }
+
 .navList .navItem .logo {
   width: auto;
   height: auto;
