@@ -1,9 +1,9 @@
-@font-face {
+@font-face {/*Esta regla define una fuente personalizada llamada Comfortaa*/
   font-family: "Comfortaa";
   src: url("fonts/Comfortaa-VariableFont_wght.ttf");
 }
 
-body {
+body {/*inherit permite heredar de fuente padres este caso Comdortaaa, sino aplica sans-serif*/
   font-family: inherit, "Comfortaa", sans-serif;
 }
 
