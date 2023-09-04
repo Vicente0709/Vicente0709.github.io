@@ -35,6 +35,10 @@ function readProduct() {
 
       var inputElement5 = document.getElementById("precio");
       inputElement5.value = product.value;
+
+      var backgroundImageUrl = product.image;
+      var dropzoneDiv = document.getElementById("dropzone");
+      dropzoneDiv.style.backgroundImage = `url(../../backend/uploads/${backgroundImageUrl})`;
     })
     .catch((error) => {
       console.log(error);
