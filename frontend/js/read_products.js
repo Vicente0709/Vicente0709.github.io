@@ -14,6 +14,12 @@ function readProducts() {
         console.log(element.product.title);
         let nuevoDivPrincipal = document.createElement("div");
         nuevoDivPrincipal.classList.add("product-card");
+        nuevoDivPrincipal.style = "cursor: pointer";
+        nuevoDivPrincipal.addEventListener("click", function () {
+          let productoID = element.id;
+          localStorage.setItem("productoID", productoID);
+          window.location.href = "../views/viewProduct.html";
+        });
 
         let nuevaImagen = document.createElement("img");
         nuevaImagen.src = "../../backend/uploads/" + element.product.image;
@@ -119,19 +125,18 @@ function verificarAutenticacionBtn() {
     btnRegister.style.display = "none";
     btnLog.style.display = "none";
     btnlogout.style.display = "block";
-    lblUser.style.display= "block"
+    lblUser.style.display = "block";
 
     var correo = objetoRecuperado.email;
-    var correoPartes = correo.split('@');
+    var correoPartes = correo.split("@");
     lblUser.textContent = correoPartes[0];
-
   } else {
     console.log("Usuario aún no logeado");
     btnRegister.style.display = "block";
     btnLog.style.display = "block";
     btnlogout.style.display = "none";
 
-    lblUser.style.display= "none"
+    lblUser.style.display = "none";
   }
 }
 

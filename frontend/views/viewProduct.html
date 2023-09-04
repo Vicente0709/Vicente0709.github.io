@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalles del Producto </title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="../node_modules/axios/dist/axios.js"></script>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background-color: #f9f9f9;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .product-container {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            max-width: 400px;
+            margin: 20px auto;
+            position: relative;
+            /* Para posicionar la "X" */
+
+
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+
+        }
+
+        .product-image {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .close-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 24px;
+            cursor: pointer;
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="product-container">
+        <span class="close-button" onclick="goBack()">&#10006;</span>
+        <img id="image" src=""  class="product-image">
+        <h1 id="titulo"> </h1>
+        <p style="font-weight: bold;">Descripción:
+        <p id="descripcion"> </p>
+        </p>
+        <p style="font-weight: bold; display: inline;">Cantidad:
+        <p id="cantidad" style="display: inline;"> </p>
+        </p>
+        <p style="font-weight: bold; display: inline;">Estado:
+        <p id="estado" style="display: inline;"></p>
+        </p>
+        <p style="font-weight: bold; display: inline;">Tipo:
+        <p id="tipo" style="display: inline;"></p>
+        </p>
+        <p style="font-weight: bold;">Usuario:
+        <p id="user"></p>
+        </p>
+        <p style="font-weight: bold; display: inline;">Precio:
+            $
+        <p id="value" style="display: inline;"></p>
+        </p>
+    </div>
+
+    <script>
+        let productId = localStorage.getItem("productoID");
+        let setUrl = "http://localhost:3000/polimarket/read/" + productId;
+        console.log(setUrl);
+
+        function readProduct() {
+            axios
+                .get(setUrl, {
+                    headers: {
+                        "Content-Type": "multipart/form-data",
+                    },
+                })
+                .then((response) => {
+                    let product = response.data[0].product;
+                    console.log(product);
+
+                    var img = document.getElementById("image");
+                    img.src = "../../backend/uploads/" + product.image;
+
+                    var Element1 = document.getElementById("titulo");
+                    Element1.textContent = product.title;
+
+                    var Element3 = document.getElementById("descripcion");
+                    Element3.textContent = product.description;
+
+                    var Element4 = document.getElementById("cantidad");
+                    Element4.textContent = product.count;
+
+                    var Element2 = document.getElementById("estado");
+                    Element2.textContent = product.state;
+
+
+                    var Element5 = document.getElementById("value");
+                    Element5.textContent = product.value;
+
+                    var Element6 = document.getElementById("user");
+                    Element6.textContent = product.user;
+
+                    var Element6 = document.getElementById("tipo");
+                    Element6.textContent = product.type;
+
+
+
+
+                })
+                .catch((error) => {
+                    console.log(error);
+                });
+        }
+        readProduct();
+
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+
+</html>
