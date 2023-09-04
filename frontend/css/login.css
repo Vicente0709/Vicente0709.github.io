@@ -4,12 +4,12 @@
 }
 
 body {
-    font-family: 'Comfortaa', sans-serif;
+    font-family: 'Comfortaa', sans-serif; /*fuente que se utilizará para el texto en el cuerpo de la página, se debe usar la fuente 'Comfortaa' si está disponible en el sistema del usuario, si no se usará una fuente genérica sans-serif como respaldo. */
 }
 
 #imagen {
     display: block;
-    margin-left: auto;
+    margin-left: auto; /* propiedades de margen para centrar horizontalmente el elemento*/
     margin-right: auto;
     max-width: 15%;
     padding: 10px;
