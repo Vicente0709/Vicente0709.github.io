@@ -15,13 +15,14 @@ function readProducts() {
         let nuevoDivPrincipal = document.createElement("div");
         nuevoDivPrincipal.classList.add("product-card");
         nuevoDivPrincipal.style = "cursor: pointer";
-        nuevoDivPrincipal.addEventListener("click", function () {
+        
+        let nuevaImagen = document.createElement("img");
+        nuevaImagen.addEventListener("click", function () {
           let productoID = element.id;
           localStorage.setItem("productoID", productoID);
           window.location.href = "../views/viewProduct.html";
         });
 
-        let nuevaImagen = document.createElement("img");
         nuevaImagen.src = "../../backend/uploads/" + element.product.image;
 
         let nuevoDivDos = document.createElement("div");
