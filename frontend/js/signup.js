@@ -32,7 +32,8 @@ document.getElementById("formulario").addEventListener("submit", function (e) {
       console.log("Usuario creado exitoso:", user);
       //todo redirigir a la pagina principal
       alert("Usuario creado exitosamente");
-      //window.location.href = "index.html";
+      window.location.href = "index.html";
+      localStorage.setItem("usuario", JSON.stringify(user));
     })
     .catch(function (error) {
       // Ocurrió un error durante el inicio de sesión

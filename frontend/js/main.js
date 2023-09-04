@@ -2,7 +2,16 @@
 const btnLog = document.getElementById("btnLogNav");
 const btnRegister = document.getElementById("btnRegisterNav");
 const btnPublicar = document.getElementById("btnBanner");
+//logout
+const btnlogout = document.getElementById("btnlogout");
 
+btnlogout.addEventListener("click", function () {
+  console.log("Se hizo clic en el botón de Logout");
+  // window.location.href = "../views/login.html";
+  // Borrar el usuario del localStorage
+  localStorage.removeItem("usuario");
+  window.location.reload();
+});
 
 //listener
 
@@ -21,3 +30,24 @@ btnPublicar.addEventListener("click", function () {
   window.location.href = "../views/createProduct.html";
 });
 
+// Ocultar o mostrar botones si esta iniciado sesion
+function verificarAutenticacionBtn() {
+  let usuarioGuardado = localStorage.getItem("usuario");
+  let objetoRecuperado = JSON.parse(usuarioGuardado);
+  console.log(objetoRecuperado);
+
+  if (objetoRecuperado) {
+    console.log("Usuario logeado:", objetoRecuperado.email);
+    btnRegister.style.display = "none";
+    btnLog.style.display = "none";
+    btnlogout.style.display = "block";
+  } else {
+    console.log("Usuario aún no logeado");
+    btnRegister.style.display = "block";
+    btnLog.style.display = "block";
+    btnlogout.style .display= "none";
+  }
+}
+
+// Verificar la autenticación al cargar botones solo disponibles cuando un usuario este logeado
+verificarAutenticacionBtn();

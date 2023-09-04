@@ -62,7 +62,6 @@ function updateProduct(event) {
 
   const data = {
     product: {
-      
       title: inputElement1,
       state: inputElement2,
       description: inputElement3,
@@ -71,16 +70,15 @@ function updateProduct(event) {
     },
   };
   // formData.append("image", document.getElementById("imagen").files[0]);
-  
+
   axios
     .put(setUrlUpdate, data, {
       headers: {
-        "Content-Type": "application/json", 
+        "Content-Type": "application/json",
       },
     })
     .then((response) => {
-      console.log('Respuesta del servidor', response.data);
-
+      console.log("Respuesta del servidor", response.data);
     })
     .catch((error) => {
       console.log(error);
@@ -88,3 +86,30 @@ function updateProduct(event) {
 }
 
 readProduct();
+
+//Constantes sesion btn
+const btnLog = document.getElementById("btnLogNav");
+const btnRegister = document.getElementById("btnRegisterNav");
+//logout
+const btnlogout = document.getElementById("btnlogout");
+// Ocultar o mostrar botones si esta iniciado sesion
+function verificarAutenticacionBtn() {
+  let usuarioGuardado = localStorage.getItem("usuario");
+  let objetoRecuperado = JSON.parse(usuarioGuardado);
+  console.log(objetoRecuperado);
+
+  if (objetoRecuperado) {
+    console.log("Usuario logeado:", objetoRecuperado.email);
+    btnRegister.style.display = "none";
+    btnLog.style.display = "none";
+    btnlogout.style.display = "block";
+  } else {
+    console.log("Usuario aún no logeado");
+    btnRegister.style.display = "block";
+    btnLog.style.display = "block";
+    btnlogout.style.display = "none";
+  }
+}
+
+// Verificar la autenticación al cargar botones solo disponibles cuando un usuario este logeado
+verificarAutenticacionBtn();

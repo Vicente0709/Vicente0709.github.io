@@ -90,9 +90,9 @@ app.post('/polimarket/create', upload.single('image'), (req, res) => {
     (async () => {
         try {
             console.log(req.body);
-
+            
             let data = {
-                "user": "mateo.morales01@epn.edu.ec",
+                "user": req.body.user,
                 // "ID": 2,
                 "type": req.body.type,
                 "title": req.body.title,
