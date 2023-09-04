@@ -92,6 +92,15 @@ const btnLog = document.getElementById("btnLogNav");
 const btnRegister = document.getElementById("btnRegisterNav");
 //logout
 const btnlogout = document.getElementById("btnlogout");
+
+btnlogout.addEventListener("click", function () {
+  console.log("Se hizo clic en el botón de Logout");
+  // window.location.href = "../views/login.html";
+  // Borrar el usuario del localStorage
+  localStorage.removeItem("usuario");
+  window.location.reload();
+});
+
 // Ocultar o mostrar botones si esta iniciado sesion
 function verificarAutenticacionBtn() {
   let usuarioGuardado = localStorage.getItem("usuario");

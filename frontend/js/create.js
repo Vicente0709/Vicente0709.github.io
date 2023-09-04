@@ -5,7 +5,6 @@ const btnRegister = document.getElementById("btnRegisterNav");
 //logout
 const btnlogout = document.getElementById("btnlogout");
 
-
 //listener
 
 btnLog.addEventListener("click", function () {
@@ -18,6 +17,13 @@ btnRegister.addEventListener("click", function () {
   window.location.href = "../views/signup.html";
 });
 
+btnlogout.addEventListener("click", function () {
+  console.log("Se hizo clic en el botón de Logout");
+  // window.location.href = "../views/login.html";
+  // Borrar el usuario del localStorage
+  localStorage.removeItem("usuario");
+  window.location.reload();
+});
 
 // Ocultar o mostrar botones si esta iniciado sesion
 function verificarAutenticacionBtn() {

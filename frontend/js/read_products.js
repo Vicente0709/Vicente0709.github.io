@@ -16,7 +16,7 @@ function readProducts() {
         nuevoDivPrincipal.classList.add("product-card");
 
         let nuevaImagen = document.createElement("img");
-        nuevaImagen.src = "../../backend/uploads/"+element.product.image;
+        nuevaImagen.src = "../../backend/uploads/" + element.product.image;
 
         let nuevoDivDos = document.createElement("div");
         nuevoDivDos.classList.add("product-info");
@@ -92,13 +92,19 @@ function readProducts() {
     });
 }
 
-
 //Constantes
 const btnLog = document.getElementById("btnLogNav");
 const btnRegister = document.getElementById("btnRegisterNav");
 //logout
 const btnlogout = document.getElementById("btnlogout");
 
+btnlogout.addEventListener("click", function () {
+  console.log("Se hizo clic en el botón de Logout");
+  // window.location.href = "../views/login.html";
+  // Borrar el usuario del localStorage
+  localStorage.removeItem("usuario");
+  window.location.reload();
+});
 
 // Ocultar o mostrar botones si esta iniciado sesion
 function verificarAutenticacionBtn() {
@@ -115,7 +121,7 @@ function verificarAutenticacionBtn() {
     console.log("Usuario aún no logeado");
     btnRegister.style.display = "block";
     btnLog.style.display = "block";
-    btnlogout.style .display= "none";
+    btnlogout.style.display = "none";
   }
 }
 
