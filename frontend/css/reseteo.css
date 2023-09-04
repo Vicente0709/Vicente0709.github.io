@@ -1,9 +1,9 @@
-@font-face {
+@font-face {/*Esta regla define una fuente personalizada llamada Comfortaa*/
     font-family: 'Comfortaa';
     src: url('fonts/Comfortaa-VariableFont_wght.ttf');
 }
 
-body {
+body {/*Utiliza la regla Comfortaa, sino esta disponible utiliza sans-serif*/
     font-family: 'Comfortaa', sans-serif;
 }
 
