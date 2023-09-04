@@ -4,6 +4,8 @@ const btnRegister = document.getElementById("btnRegisterNav");
 
 //logout
 const btnlogout = document.getElementById("btnlogout");
+//usuario
+const lblUser = document.getElementById("usuario");
 
 //listener
 
@@ -36,11 +38,19 @@ function verificarAutenticacionBtn() {
     btnRegister.style.display = "none";
     btnLog.style.display = "none";
     btnlogout.style.display = "block";
+    lblUser.style.display= "block"
+
+    var correo = objetoRecuperado.email;
+    var correoPartes = correo.split('@');
+    lblUser.textContent = correoPartes[0];
+
   } else {
     console.log("Usuario aún no logeado");
     btnRegister.style.display = "block";
     btnLog.style.display = "block";
     btnlogout.style.display = "none";
+    
+    lblUser.style.display= "none"
   }
 }
 
