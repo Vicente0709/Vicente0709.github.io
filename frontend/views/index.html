@@ -8,6 +8,8 @@
 
   <link rel="stylesheet" href="../css/index.css" />
   <link rel="icon" href="../images/favicon.ico" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 </head>
 
 <body>
@@ -26,6 +28,7 @@
       <ul class="profile">
           <li class="navItem"><button id="btnLogNav">Log in</button></li>
           <li class="navItem"><button id="btnRegisterNav">Register</button></li>
+          <li class="navItem"><button id="btnlogout">Logout <i class="fas fa-sign-out-alt"></i></button></li>
       </ul>
   </nav>
     <!--Fin Barra de navegacion-->
@@ -133,6 +136,10 @@
 
 
 </body>
-<script src="../js/main.js"></script>
+<!--script de firebase-->
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
 
+<script src="../js/main.js"></script>
+<!-- <script src="../js/auth.js"></script> -->
 </html>

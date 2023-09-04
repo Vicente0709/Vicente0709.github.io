@@ -71,7 +71,24 @@ body {
   border-radius: 5%;
   cursor: pointer;
 }
+/* boton para cerrar sesion */
 
+#btnlogout {
+  background-color: #ff0000; /* Rojo */
+  color: white;
+  border: 1px solid #ff0000; /* Borde rojo */
+  padding: 10px 30px;
+  border-radius: 5%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Estilo para el ícono */
+#btnlogout i {
+  margin-right: 5px;
+}
 #cajaInformacion {
   border: 1px solid black;
   border-radius: 10px;

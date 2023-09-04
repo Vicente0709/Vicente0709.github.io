@@ -28,9 +28,12 @@ document.getElementById("formulario").addEventListener("submit", function (e) {
     .then(function (userCredential) {
       // El inicio de sesión fue exitoso
       var user = userCredential.user;
+      console.log(user);
       alert("Credenciales correctas");
       //todo redirigir a la pagina principal
       window.location.href = "../views/index.html";
+
+      localStorage.setItem("usuario", JSON.stringify(user));
     })
     .catch(function (error) {
       // Ocurrió un error durante el inicio de sesión

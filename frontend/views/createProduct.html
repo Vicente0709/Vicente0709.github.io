@@ -6,6 +6,7 @@
     <title>Create Product</title>
     <link rel="stylesheet" href="../css/createProduct.css">
     <link rel="icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
    
 </head>
 
@@ -25,6 +26,7 @@
             <ul class="profile">
                 <li class="navItem"><button id="btnLogNav">Log in</button></li>
                 <li class="navItem"><button id="btnRegisterNav">Register</button></li>
+                <li class="navItem"><button id="btnlogout">Logout <i class="fas fa-sign-out-alt"></i></button></li>
             </ul>
         </nav>
         <!--Fin Barra de navegacion-->
@@ -62,14 +64,16 @@
 
                     <label for="tipo">Categoria</label>
                     <input list="tipos" id="tipo" name="type">
+                    
                     <datalist id="tipos">
                         <option value="Libros">
                         <option value="Tecnologia">
-                        <option value="Producto 3">
+                        <option value="Otros">
                     </datalist>
                     <br>
                     <label for="titulo">Título de la publicación</label>
                     <input id="titulo" type="text" name="title">
+                    <input type="text" id="user" name="user" hidden >
                     <br>
                     <label for="estado">Estado</label>
                     <select id="estado" name="state" required>
@@ -109,4 +113,5 @@
 <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 <script src="../node_modules/axios/dist/axios.js"></script>
+<script src="../js/auth.js"></script>
 </html>
